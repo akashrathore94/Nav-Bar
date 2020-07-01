@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation bar</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nav Bar</title>
   </head>
-  <body></body>
+  <body>
+    <div class="navi">
+      <nav>
+        <h1>Akash</h1>
+        <ul>
+          <li><a class="link" data-page="home" href="#">Home</a></li>
+          <li><a class="link" data-page="about" href="#">About</a></li>
+          <li><a class="link" data-page="portfolio" href="#">Portfolio</a></li>
+          <li><a class="link" data-page="contact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section data-index="0" class="about">
+        <h2 class="text0">About</h2>
+        <div class="img-con zero">
+          <img src="img.jpg" alt="IMG" />
+        </div>
+      </section>
+      <section data-index="1" class="portfolio">
+        <h2 class="text1">Portfolio</h2>
+        <div class="img-con even">
+          <img src="img.jpg" alt="IMG" />
+        </div>
+      </section>
+      <section data-index="2" class="contact">
+        <h2 class="text2">Contact</h2>
+        <div class="img-con odd">
+          <img src="img.jpg" alt="IMG" />
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
